@@ -46,7 +46,7 @@ with open(sys.argv[1]) as fp:
 
         # "The field can contain only lowercase letters and numbers. Name must
         # be between 3 and 24 characters."
-        if (re.search("[^a-z0-9]", storacct) or len(storacct) < 3 or len(storacct) > 23):
+        if (re.search("[^a-z0-9]", storacct) or len(storacct) < 3 or len(storacct) > 24):
             print(f"Invalid storage account name {storacct}, skipping.")
             continue
 
